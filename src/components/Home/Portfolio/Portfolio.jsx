@@ -7,7 +7,7 @@ const Portfolio = () => {
         <div>
             <div>
                 <h2 className='text-2xl text-center mt-10'>Showcasing some of my best work</h2>
-                <h1 className='text-5xl text-center text-white font-bold'>Protfolio</h1>
+                <h1 className='text-3xl lg:text-5xl text-center text-white font-bold'>Protfolio</h1>
                 <div className='border-b-4 mx-auto mt-5 border-green-500 w-28 mb-20'></div>
                 <PortfolioNavbar></PortfolioNavbar>
                 <Outlet></Outlet>

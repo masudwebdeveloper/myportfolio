@@ -2,10 +2,10 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className='px-24 mb-32'>
-            <div className='mb-10'>
+        <div className='px-3 lg:px-24 mb-10 lg:mb-32'>
+            <div className='mb-10 text-center lg:text-start'>
                 <h3 className='text-xl'>My level of knowledge in some tools</h3>
-                <h1 className='text-4xl text-white font-bold'>My Skills</h1>
+                <h1 className='text-2xl lg:text-4xl text-white font-bold'>My Skills</h1>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-10'>
                 <div>

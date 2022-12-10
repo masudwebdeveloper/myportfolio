@@ -7,7 +7,7 @@ const Resume = () => {
     return (
         <div>
             <h2 className='text-2xl text-center mt-10'>Check out my Resume</h2>
-            <h1 className='text-5xl text-center text-white'>Resume</h1>
+            <h1 className='text-3xl lg:text-5xl text-center text-white'>Resume</h1>
             <div className='border-b-4 mx-auto mt-5 border-green-500 w-28'></div>
             <div>
                 <Education></Education>

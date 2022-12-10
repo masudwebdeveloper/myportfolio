@@ -7,36 +7,44 @@ const AllProject = () => {
             link: 'https://doc-technical-client.web.app/',
             projectName: 'Doc Technical',
             text: 'Online Course',
-            imgurl: 'https://i.ibb.co/HD4qsjV/doc-technical.png'
+            imgurl: 'https://i.ibb.co/dgM0xWt/istockphoto-1341094505-612x612.jpg'
         },
         {
             id: 2,
             link: 'https://cleaning-man.web.app/',
             projectName: 'Clean East',
             text: 'Online Cleaning Service',
-            imgurl: 'https://i.ibb.co/wLPkc59/clean-east.png'
+            imgurl: 'https://i.ibb.co/StrcW8Z/istockphoto-520021633-612x612.jpg'
         },
         {
             id: 3,
             link: 'https://quizzy-program.netlify.app/home',
             projectName: 'Quizzy',
             text: 'Online quizz',
-            imgurl: 'https://i.ibb.co/KXhXHs9/quizzy.png'
+            imgurl: 'https://i.ibb.co/K0LhCBG/question-mark-5475172-340.jpg'
         },
         {
             id: 4,
             link: 'https://email-password-auth-953b5.web.app/',
             projectName: 'OLDBazaar',
             text: 'Resaler Website',
-            imgurl: 'https://i.ibb.co/4P6Qqqt/oldbazaar.png'
+            imgurl: 'https://i.ibb.co/ssC2691/istockphoto-155354273-612x612.jpg'
+        },
+        {
+            id: 5,
+            link: 'https://brigate-construction.netlify.app/',
+            projectName: 'Brigate',
+            text: 'Construction consultation',
+            imgurl: 'https://i.ibb.co/3N0MvrC/istockphoto-1385368397-612x612.jpg'
         },
     ]
     return (
-        <div className='px-24 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+        <div className='px-4 lg:px-24 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
             {
                 projectData.map(project => <a
-                    href={project.link} class="group relative block bg-black"
+                    href={project.link} class="group relative block bg-black h-[250px] lg:h-full rounded-lg"
                     key={project.id}
+                    target="_blank"
                 >
                     <img
                         alt="Developer"

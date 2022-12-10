@@ -1,20 +1,21 @@
 import React from 'react';
-import { FaHome, FaPhone, FaVoicemail } from 'react-icons/fa';
+import { FaHome, FaPhone } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md'
-import { AiOutlineMail} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
 
 const ContactForm = () => {
     return (
-        <div className='px-24 grid grid-cols-1 md:grid-cols-2 gap-x-14'>
+        <div className='px-4 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 mb-10'>
             <div className='col-span-1'>
                 <h1 className='text-3xl font-semibold mb-5 text-gray-100'>Message</h1>
-                <form action="" className='py-5'>
+                <form action="https://formsubmit.co/abdullainfo30@gmail.com" method="POST" className='py-5'>
                     <div className='flex gap-x-5'>
-                        <input type="text" placeholder="Your Name" className="input input-border w-full bg-gray-800" required />
-                        <input type="email" placeholder="Your Email" className="input input-border w-full bg-gray-800" required />
+                        <input type="text" name='name' placeholder="Your Name" className="input input-border w-full bg-gray-800" required />
+                        <input type="email" name='email' placeholder="Your Email" className="input input-border w-full bg-gray-800" required />
+                        <input type="hidden" name="_captcha" value="false"></input>
                     </div>
-                    <input type="text" placeholder="Subject" className="input input-border w-full bg-gray-800 mt-5" required />
-                    <textarea className="textarea textarea-bordered mt-5 bg-gray-800 w-full" placeholder="Message"></textarea>
+                    <input type="text" name='_subject' placeholder="Subject" className="input input-border w-full bg-gray-800 mt-5" required />
+                    <textarea name='message' rows='5' className="textarea textarea-bordered mt-5 bg-gray-800 w-full" placeholder="Message"></textarea>
                     <input className='btn btn-success rounded-full text-white mt-5' type="submit" value="Send Message" />
                 </form>
             </div>

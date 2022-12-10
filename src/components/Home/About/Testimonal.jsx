@@ -41,15 +41,15 @@ const Testimonal = () => {
         },
     ]
     return (
-        <div className='mt-10 mx-auto'>
-            <div className='pl-24 mb-10'>
+        <div className='mt-10'>
+            <div className='lg:pl-24 mb-10 text-center lg:text-start'>
                 <h3 className='text-xl'>What my clients think about me</h3>
-                <h1 className='text-5xl text-white'>Testimonals</h1>
+                <h1 className='text-3xl lg:text-5xl text-white'>Testimonals</h1>
             </div>
-            <div className='px-20'>
+            <div className='lg:px-20'>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}

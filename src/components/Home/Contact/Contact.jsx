@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <div>
             <h2 className='text-2xl text-center mt-10'>Feel free to contact me anytime</h2>
-            <h1 className='text-5xl text-center text-white font-bold'>Get In Touch</h1>
+            <h1 className='text-3xl lg:text-5xl text-center text-white font-bold'>Get In Touch</h1>
             <div className='border-b-4 mx-auto mt-5 border-green-500 w-28 mb-20'></div>
             <div>
                 <ContactForm></ContactForm>
