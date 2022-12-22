@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AllProject = () => {
     const projectData = [
@@ -7,12 +8,14 @@ const AllProject = () => {
             link: 'https://doc-technical-client.web.app/',
             projectName: 'Doc Technical',
             text: 'Online Course',
+            details: '/doctechnicalDetails',
             imgurl: 'https://i.ibb.co/dgM0xWt/istockphoto-1341094505-612x612.jpg'
         },
         {
             id: 2,
             link: 'https://cleaning-man.web.app/',
             projectName: 'Clean East',
+            details: '/cleanmanDetails',
             text: 'Online Cleaning Service',
             imgurl: 'https://i.ibb.co/StrcW8Z/istockphoto-520021633-612x612.jpg'
         },
@@ -20,6 +23,7 @@ const AllProject = () => {
             id: 3,
             link: 'https://quizzy-program.netlify.app/home',
             projectName: 'Quizzy',
+            details: '/quizzyDetails',
             text: 'Online quizz',
             imgurl: 'https://i.ibb.co/K0LhCBG/question-mark-5475172-340.jpg'
         },
@@ -27,6 +31,7 @@ const AllProject = () => {
             id: 4,
             link: 'https://email-password-auth-953b5.web.app/',
             projectName: 'OLDBazaar',
+            details: '/olbazarDetails',
             text: 'Resaler Website',
             imgurl: 'https://i.ibb.co/ssC2691/istockphoto-155354273-612x612.jpg'
         },
@@ -34,6 +39,7 @@ const AllProject = () => {
             id: 5,
             link: 'https://brigate-construction.netlify.app/',
             projectName: 'Brigate',
+            details: '/brigateDetails',
             text: 'Construction consultation',
             imgurl: 'https://i.ibb.co/3N0MvrC/istockphoto-1385368397-612x612.jpg'
         },
@@ -41,10 +47,9 @@ const AllProject = () => {
     return (
         <div className='px-4 lg:px-24 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
             {
-                projectData.map(project => <a
-                    href={project.link} class="group relative block bg-black h-[250px] lg:h-full rounded-lg"
+                projectData.map(project => <Link
+                    to={project.details} class="group relative block bg-black h-[250px] lg:h-full rounded-lg"
                     key={project.id}
-                    target="_blank"
                 >
                     <img
                         alt="Developer"
@@ -71,7 +76,7 @@ const AllProject = () => {
                             </div>
                         </div>
                     </div>
-                </a>)
+                </Link>)
             }
         </div>
 

@@ -49,7 +49,23 @@ const Testimonal = () => {
             <div className='lg:px-20'>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
-                    slidesPerView={1}
+                    // slidesPerView={1}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        640: {
+                            width: 640,
+                            slidesPerView: 1,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            width: 768,
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    }}
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}

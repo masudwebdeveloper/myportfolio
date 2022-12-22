@@ -13,6 +13,7 @@ const ContactForm = () => {
                         <input type="text" name='name' placeholder="Your Name" className="input input-border w-full bg-gray-800" required />
                         <input type="email" name='email' placeholder="Your Email" className="input input-border w-full bg-gray-800" required />
                         <input type="hidden" name="_captcha" value="false"></input>
+                        <input type="hidden" name="_next" value="https://mrmasud.netlify.app/thankspage"></input>
                     </div>
                     <input type="text" name='_subject' placeholder="Subject" className="input input-border w-full bg-gray-800 mt-5" required />
                     <textarea name='message' rows='5' className="textarea textarea-bordered mt-5 bg-gray-800 w-full" placeholder="Message"></textarea>
