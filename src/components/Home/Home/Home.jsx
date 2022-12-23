@@ -38,7 +38,7 @@ const Home = () => {
         },
     ]
 
-    
+
 
     return (
         <div className='flex'>
@@ -125,33 +125,35 @@ const Home = () => {
                                     </button>
                                 </a>
                             </div>
-                            <img alt='profile' src="https://i.ibb.co/qdHXDs7/masud-remove-bg.png" className="lg:h-[540px] rounded-lg shadow-2xl" />
+                            <div title='Masud Rana' className='mt-14 rounded'>
+                                <img alt='profile' src="https://i.ibb.co/qdHXDs7/masud-remove-bg.png" className="brightness-50 hover:brightness-100 duration-500 lg:h-[540px] rounded-lg shadow-2xl bg-opacity-20" />
+                            </div>
 
                         </div>
                     </div>
                     <div className='fixed bottom-10 z-50'>
                         <a className='group' href="##" target='_blank'>
-                            <div className='group-hover:w-20 w-10 h-10 border-1 flex items-center justify-center bg-[#00acee] duration-500'>
+                            <div className='group-hover:w-14 w-10 h-10 border-1 flex items-center justify-center bg-[#00acee] duration-500'>
                                 <FaTwitter className='text-white'></FaTwitter>
                             </div>
                         </a>
                         <a href="##https://www.facebook.com/masudwebdeveloper/" target='_blank'>
-                            <div className='group hover:w-20 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#3b5998] duration-500'>
+                            <div className='group hover:w-14 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#3b5998] duration-500'>
                                 <FaFacebookSquare className='text-white'></FaFacebookSquare>
                             </div>
                         </a>
                         <a href="##https://www.facebook.com/masudwebdeveloper/" target='_blank'>
-                            <div className='group hover:w-20 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#0072b1] duration-500'>
+                            <div className='group hover:w-14 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#0072b1] duration-500'>
                                 <FaLinkedin className='text-white'></FaLinkedin>
                             </div>
                         </a>
                         <a href="##https://www.facebook.com/masudwebdeveloper/" target='_blank'>
-                            <div className='group hover:w-20 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#171515] duration-500'>
+                            <div className='group hover:w-14 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#171515] duration-500'>
                                 <FaGithub className='text-white'></FaGithub>
                             </div>
                         </a>
                         <a href="##https://www.facebook.com/masudwebdeveloper/" target='_blank'>
-                            <div className='group hover:w-20 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#bc2a8d] duration-500'>
+                            <div className='group hover:w-14 hover:px-5 w-10 h-10 flex justify-center items-center bg-[#bc2a8d] duration-500'>
                                 <FaInstagram className='text-white'></FaInstagram>
                             </div>
                         </a>

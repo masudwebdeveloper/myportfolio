@@ -52,7 +52,7 @@ const Particales = () => {
                             "color": "#3d3d3d"
                         },
                         "opacity": {
-                            "value": 0.9,
+                            "value": 0.5,
                             "random": false,
                             "anim": {
                                 "enable": true,
@@ -62,7 +62,7 @@ const Particales = () => {
                             }
                         },
                         "size": {
-                            "value": 50,
+                            "value": 20,
                             "random": false,
                             "anim": {
                                 "enable": false,
@@ -136,7 +136,7 @@ const Particales = () => {
                     },
                     "retina_detect": true,
                     "background": {
-                        "color": "#0d47a1",
+                        "color": "#4d4d4d",
                         "image": "",
                         "position": "50% 50%",
                         "repeat": "no-repeat",
